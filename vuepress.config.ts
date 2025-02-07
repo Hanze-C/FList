@@ -71,14 +71,14 @@ export default defineUserConfig({
         maxDeep: 3
       }),
     },
-    {
-      mountPath: "/gitee测试/发行版",
-      analysis: giteeReleasesFilesAnalysis({
-        user: "cosa-project",
-        repository: "flist-test",
-        direction: "desc"
-      })
-    },
+//    {
+//      mountPath: "/gitee测试/发行版",
+//      analysis: giteeReleasesFilesAnalysis({
+//        user: "cosa-project",
+//        repository: "flist-test",
+//        direction: "desc"
+//      })
+//    },
     {
       mountPath: "/gitee测试/仓库",
       analysis: giteeReposAnalysis({
