@@ -74,7 +74,7 @@ export default defineUserConfig({
     {
       mountPath: "/gitee测试/发行版",
       analysis: giteeReleasesFilesAnalysis({
-        user: "jja8",
+        user: "cosa-project",
         repository: "flist-test",
         direction: "desc"
       })
