@@ -57,8 +57,8 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
-      mountPath: "/Application/PicaComic",
-      analysis: githubReleasesFilesAnalysis({ user: "CeuiLiSA", repository: "Pixiv-Shaft" }),
+      mountPath: "/Application/Pixeval",
+      analysis: githubReleasesFilesAnalysis({ user: "Pixeval", repository: "Pixeval" }),
       downProxy: vercelDownProxy(),
     },
     {
