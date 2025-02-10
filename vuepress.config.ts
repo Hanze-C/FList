@@ -71,6 +71,13 @@ export default defineUserConfig({
       }),
       downProxy: vercelDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
+    {
+      mountPath: "/",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "/test/web.url": "https://hanze.icu",
+      }),
+    },
     // {
     //   mountPath: "/huggingface测试",
     //   analysis: huggingFaceDatasetsAnalysis({
