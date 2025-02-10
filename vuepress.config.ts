@@ -33,13 +33,13 @@ export default defineUserConfig({
   theme: FileList([
     {
       // 挂载路径
-      mountPath: "/KnapsackToGo4下载",
+      mountPath: "/Application/PixEZ",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
-        user: "Hanze-C",
+        user: "Notsfsssf",
         // 仓库所有者的仓库名
-        repository: "KnapsackToGo4"
+        repository: "pixez-flutter"
       }),
     },
     {
@@ -60,6 +60,17 @@ export default defineUserConfig({
       }),
       downProxy: vercelDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
+    // {
+    //   mountPath: "/huggingface测试",
+    //   analysis: huggingFaceDatasetsAnalysis({
+    //     userName: "Open-Orca",
+    //     datasetsName: "OpenOrca",
+    //     branchName: "main",
+    //     path: "/",
+    //     //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
+    //     maxDeep: 3
+    //   }),
+    // },
     {
       mountPath: "/huggingface测试",
       analysis: huggingFaceDatasetsAnalysis({
@@ -71,14 +82,14 @@ export default defineUserConfig({
         maxDeep: 3
       }),
     },
-//    {
-//      mountPath: "/gitee测试/发行版",
-//      analysis: giteeReleasesFilesAnalysis({
-//        user: "cosa-project",
-//        repository: "flist-test",
-//        direction: "desc"
-//      })
-//    },
+    {
+      mountPath: "/gitee测试/发行版",
+      analysis: giteeReleasesFilesAnalysis({
+        user: "cosa-project",
+        repository: "flist-test",
+        direction: "desc"
+      })
+    },
     {
       mountPath: "/gitee测试/仓库",
       analysis: giteeReposAnalysis({
@@ -86,14 +97,14 @@ export default defineUserConfig({
         repository: "flist-test"
       }),
     },
-    {
-      mountPath: "/ProgrammingVTuberLogos",
-      analysis: githubReposAnalysis({
-        user: "Aikoyori",
-        repository: "ProgrammingVTuberLogos",
-      }),
-      downProxy: vercelDownProxy()
-    },
+    // {
+    //   mountPath: "/ProgrammingVTuberLogos",
+    //   analysis: githubReposAnalysis({
+    //     user: "Aikoyori",
+    //     repository: "ProgrammingVTuberLogos",
+    //   }),
+    //   downProxy: vercelDownProxy()
+    // },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
