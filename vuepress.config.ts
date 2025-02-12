@@ -62,6 +62,11 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Application/Bili.Copilot",
+      analysis: githubReleasesFilesAnalysis({ user: "Richasy", repository: "Bili.Copilot" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
