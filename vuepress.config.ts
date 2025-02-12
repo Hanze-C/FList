@@ -126,22 +126,14 @@ export default defineUserConfig({
     //     repository: "flist-test"
     //   }),
     // },
-     {
-       mountPath: "/Image/Dress/Developers",
-       analysis: githubReposAnalysis({
-         user: "Hanze-C",
-         repository: "Dress-2",
-       }),
-       downProxy: vercelDownProxy()
-     },
-     {
-      mountPath: "/Image/Dress/Developer",
-      analysis: githubReposAnalysis({
-        user: "Hanze-C",
-        repository: "Dress",
-      }),
-      downProxy: vercelDownProxy()
-    },
+//     {
+//       mountPath: "/Image/Dress/Developers",
+//       analysis: githubReposAnalysis({
+//         user: "Hanze-C",
+//         repository: "Dress-2",
+//       }),
+//       downProxy: vercelDownProxy()
+//     },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
