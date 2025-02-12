@@ -62,6 +62,11 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Image/Dress/Developers",
+      analysis: githubReposAnalysis({ user: "akkarinnw", repository: "Dress" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/Application/Pixeval",
       analysis: githubReleasesFilesAnalysis({ user: "Pixeval", repository: "Pixeval" }),
       downProxy: vercelDownProxy(),
