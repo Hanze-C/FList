@@ -135,7 +135,7 @@ export default defineUserConfig({
        downProxy: vercelDownProxy()
      },
      {
-      mountPath: "/Image/Dress/Developers",
+      mountPath: "/Image/Dress/Developer",
       analysis: githubReposAnalysis({
         user: "akkarinnw",
         repository: "Dress",
