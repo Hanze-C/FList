@@ -3,10 +3,10 @@
 
 :root{
     /**图标颜色*/
-    --logo-color: #ffcdcd;
+    --logo-color: #39C5BB;
 
     /**主题颜色的定义*/
-    --t-color-1:#ffcdcd;
+    --t-color-1:#81b7cc;
 
     /** 字体颜色的一些定义 */
     --f-color-0: rgba(0, 0, 0, 1);
@@ -33,7 +33,7 @@
 /**---------------文件列表相关 Folder.vue--------------------*/
 :root{
     --file-icon-c:var(--t-color-1);
-    --folder-icon-c: #ffcdcd;
+    --folder-icon-c: #39C5BB;
 }
 /**---------------通知相关 Notification.vue--------------------*/
 :root{
