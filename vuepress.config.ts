@@ -57,16 +57,6 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
-      mountPath: "/Image/Dress/Developers",
-      analysis: githubReposAnalysis({ user: "Cute-Dress", repository: "Dress" }),
-      downProxy: vercelDownProxy(),
-    },
-    {
-      mountPath: "/Image/Dress/Developers",
-      analysis: githubReposAnalysis({ user: "akkarinnw", repository: "Dress" }),
-      downProxy: vercelDownProxy(),
-    },
-    {
       mountPath: "/Application/Pixeval",
       analysis: githubReleasesFilesAnalysis({ user: "Pixeval", repository: "Pixeval" }),
       downProxy: vercelDownProxy(),
@@ -136,14 +126,22 @@ export default defineUserConfig({
     //     repository: "flist-test"
     //   }),
     // },
-    // {
-    //   mountPath: "/ProgrammingVTuberLogos",
-    //   analysis: githubReposAnalysis({
-    //     user: "Aikoyori",
-    //     repository: "ProgrammingVTuberLogos",
-    //   }),
-    //   downProxy: vercelDownProxy()
-    // },
+     {
+       mountPath: "/Image/Dress/Developers",
+       analysis: githubReposAnalysis({
+         user: "Cute-Dress",
+         repository: "Dress",
+       }),
+       downProxy: vercelDownProxy()
+     },
+     {
+      mountPath: "/Image/Dress/Developers",
+      analysis: githubReposAnalysis({
+        user: "akkarinnw",
+        repository: "Dress",
+      }),
+      downProxy: vercelDownProxy()
+    },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
