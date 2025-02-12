@@ -58,7 +58,7 @@ export default defineUserConfig({
     },
     {
       mountPath: "/Image/Dress/Developers",
-      analysis: githubReleasesFilesAnalysis({ user: "Cute-Dress", repository: "Dress" }),
+      analysis: githubReposAnalysis({ user: "Cute-Dress", repository: "Dress" }),
       downProxy: vercelDownProxy(),
     },
     {
