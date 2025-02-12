@@ -75,7 +75,7 @@ export default defineUserConfig({
       analysis: fileUrlTreeAnalysis({
         "/Application/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
         "/Application/PixEZ/0.9.61/PixEZ-iOS(ZAKO)": "https://hanze.lanzouw.com/iSUK92naf03e",
-        "/Application/PixEZ/0.9.61/!括号内为访问密码!": "https://list.hanze.icu/Application/PixEZ/0.9.61/",
+        "/Application/PixEZ/0.9.61/README.md": "https://raw.hanze.icu/Static/main/file/flist/Application/PixEZ/0.9.61/README.md?token=HANZE",
         "/Image/Dress/SM.MS/22732/JK-1.png": "https://s2.loli.net/2025/02/12/aFbJZUwuhRAVE9G.png",
         "/Image/Dress/SM.MS/22732/JK-2.png": "https://s2.loli.net/2025/02/12/8zKi5c7rH6ANPEy.png",
         "/Image/Dress/SM.MS/22732/JK-3.png": "https://s2.loli.net/2025/02/12/2fhqjAVKk9mvliz.png",
@@ -92,7 +92,12 @@ export default defineUserConfig({
         "/Image/Dress/CloudFlare/22746/JK-1.png": "https://paste.hanze.icu/file/gL2pGw",
         "/Image/Dress/CloudFlare/22746/JK-2.png": "https://paste.hanze.icu/file/sTOi7U",
         "/Image/Dress/CloudFlare/22746/JK-3.png": "https://paste.hanze.icu/file/xSWxHH",
-        "/Image/Dress/!请选择图床!": "https://list.hanze.icu/Image/Dress/",
+        "/Image/Dress/README.md": "https://raw.hanze.icu/Static/main/file/flist/Image/README.md?token=HANZE",
+        "/README.md": "https://raw.hanze.icu/Static/main/file/flist/README.md?token=HANZE",
+        "/Application/PixEZ/README.md": "https://raw.hanze.icu/pixez-flutter/master/README.md?token=HANZE",
+        "/Application/Pica Comic/README.md": "https://raw.hanze.icu/picacomic/master/README.md?token=HANZE",
+        "/Application/Pixiv Shaft/README.md": "https://raw.hanze.icu/pixiv-shaft/master/README.md?token=HANZE",
+        "/Application/Pixeval/0.9.61/README.md": "https://raw.hanze.icu/Pixeval/master/.github/README.md?token=HANZE",
       }),
     },
     // {
