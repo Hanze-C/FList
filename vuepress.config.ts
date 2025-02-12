@@ -131,7 +131,7 @@ export default defineUserConfig({
        analysis: githubReposAnalysis({
          user: "Cute-Dress",
          repository: "Dress",
-         authorizationToken: "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",
+         authorizationToken: "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",
        }),
        downProxy: vercelDownProxy()
      },
@@ -140,7 +140,7 @@ export default defineUserConfig({
       analysis: githubReposAnalysis({
         user: "akkarinnw",
         repository: "Dress",
-        authorizationToken: "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",
+        authorizationToken: "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",
       }),
       downProxy: vercelDownProxy()
     },
