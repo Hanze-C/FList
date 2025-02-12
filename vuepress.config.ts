@@ -131,7 +131,6 @@ export default defineUserConfig({
        analysis: githubReposAnalysis({
          user: "Hanze-C",
          repository: "Dress-2",
-         authorizationToken: "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",
        }),
        downProxy: vercelDownProxy()
      },
@@ -140,7 +139,6 @@ export default defineUserConfig({
       analysis: githubReposAnalysis({
         user: "Hanze-C",
         repository: "Dress",
-        authorizationToken: "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",
       }),
       downProxy: vercelDownProxy()
     },
