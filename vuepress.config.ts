@@ -67,6 +67,11 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Application/Starward",
+      analysis: githubReleasesFilesAnalysis({ user: "Scighost", repository: "Starward" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
