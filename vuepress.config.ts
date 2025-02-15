@@ -72,6 +72,21 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Extensions/BewlyBewly",
+      analysis: githubReleasesFilesAnalysis({ user: "BewlyBewly", repository: "BewlyBewly" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/Clash Verge",
+      analysis: githubReleasesFilesAnalysis({ user: "Clash-Verge-rev", repository: "clash-verge-rev" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/Mihomo Party",
+      analysis: githubReleasesFilesAnalysis({ user: "mihomo-party-org", repository: "mihomo-party" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
@@ -83,6 +98,11 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
+        "/Application/nthLink/nthlink-win64-current.exe": "https://www.downloadnth.com/nthlink-win64-current.exe",
+        "/Application/nthLink/nthlink-win32-current.exe": "https://www.downloadnth.com/nthlink-win32-current.exe",
+        "/Application/nthLink/nthlink-android-current.apk": "https://www.downloadnth.com/nthlink-android-current.apk",
+        "/Application/nthLink/MacOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1536318872?mt=12",
+        "/Application/nthLink/iOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1467297604",
         "/Application/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
         "/Application/PixEZ/0.9.61/PixEZ-iOS(ZAKO)": "https://hanze.lanzouw.com/iSUK92naf03e",
         "/Application/PixEZ/0.9.61/README.md": "https://raw.hanze.icu/Static/main/file/flist/Application/PixEZ/0.9.61/README.md?token=HANZE",
@@ -102,12 +122,6 @@ export default defineUserConfig({
         "/Image/Dress/CloudFlare/22746/JK-1.png": "https://paste.hanze.icu/file/gL2pGw",
         "/Image/Dress/CloudFlare/22746/JK-2.png": "https://paste.hanze.icu/file/sTOi7U",
         "/Image/Dress/CloudFlare/22746/JK-3.png": "https://paste.hanze.icu/file/xSWxHH",
-        "/Image/Dress/README.md": "https://raw.hanze.icu/Static/main/file/flist/Image/README.md?token=HANZE",
-        "/README.md": "https://raw.hanze.icu/Static/main/file/flist/README.md?token=HANZE",
-        "/Application/PixEZ/README.md": "https://raw.hanze.icu/pixez-flutter/master/README.md?token=HANZE",
-        "/Application/Pica Comic/README.md": "https://raw.hanze.icu/picacomic/master/README.md?token=HANZE",
-        "/Application/Pixiv Shaft/README.md": "https://raw.hanze.icu/pixiv-shaft/master/README.md?token=HANZE",
-        "/Application/Pixeval/0.9.61/README.md": "https://raw.hanze.icu/Pixeval/master/.github/README.md?token=HANZE",
       }),
     },
     // {
