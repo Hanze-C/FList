@@ -77,13 +77,28 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
-      mountPath: "/Application/Clash Verge",
+      mountPath: "/Application/VPN/Clash Verge",
       analysis: githubReleasesFilesAnalysis({ user: "Clash-Verge-rev", repository: "clash-verge-rev" }),
       downProxy: vercelDownProxy(),
     },
     {
-      mountPath: "/Application/Mihomo Party",
+      mountPath: "/Application/VPN/Mihomo Party",
       analysis: githubReleasesFilesAnalysis({ user: "mihomo-party-org", repository: "mihomo-party" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/VPN/Sing-Box",
+      analysis: githubReleasesFilesAnalysis({ user: "SagerNet", repository: "sing-box" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/VPN/Clash Meta For Android",
+      analysis: githubReleasesFilesAnalysis({ user: "MetaCubeX", repository: "ClashMetaForAndroid" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/VPN/v2rayNG",
+      analysis: githubReleasesFilesAnalysis({ user: "2dust", repository: "v2rayNG" }),
       downProxy: vercelDownProxy(),
     },
     {
@@ -98,14 +113,13 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/Application/nthLink/nthlink-win64-current.exe": "https://www.downloadnth.com/nthlink-win64-current.exe",
-        "/Application/nthLink/nthlink-win32-current.exe": "https://www.downloadnth.com/nthlink-win32-current.exe",
-        "/Application/nthLink/nthlink-android-current.apk": "https://www.downloadnth.com/nthlink-android-current.apk",
-        "/Application/nthLink/MacOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1536318872?mt=12",
-        "/Application/nthLink/iOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1467297604",
-        "/Application/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
+        "/Application/VPN/nthLink/nthlink-win64-current.exe": "https://www.downloadnth.com/nthlink-win64-current.exe",
+        "/Application/VPN/nthLink/nthlink-win32-current.exe": "https://www.downloadnth.com/nthlink-win32-current.exe",
+        "/Application/VPN/nthLink/nthlink-android-current.apk": "https://www.downloadnth.com/nthlink-android-current.apk",
+        "/Application/VPN/nthLink/MacOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1536318872?mt=12",
+        "/Application/VPN/nthLink/iOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1467297604",
+        "/Application/VPN/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
         "/Application/PixEZ/0.9.61/PixEZ-iOS(ZAKO)": "https://hanze.lanzouw.com/iSUK92naf03e",
-        "/Application/PixEZ/0.9.61/README.md": "https://raw.hanze.icu/Static/main/file/flist/Application/PixEZ/0.9.61/README.md?token=HANZE",
         "/Image/Dress/SM.MS/22732/JK-1.png": "https://s2.loli.net/2025/02/12/aFbJZUwuhRAVE9G.png",
         "/Image/Dress/SM.MS/22732/JK-2.png": "https://s2.loli.net/2025/02/12/8zKi5c7rH6ANPEy.png",
         "/Image/Dress/SM.MS/22732/JK-3.png": "https://s2.loli.net/2025/02/12/2fhqjAVKk9mvliz.png",
