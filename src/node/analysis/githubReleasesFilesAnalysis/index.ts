@@ -47,7 +47,7 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
     
     let count = 0;
     for (const { tag_name, name, body, published_at, assets } of jsonData) {
-	    if (count >= 2) {
+	    if (count >= 1) {
 	        break;
 	    }
 
