@@ -118,7 +118,7 @@ export default defineUserConfig({
         "/Application/VPN/nthLink/nthlink-android-current.apk": "https://www.downloadnth.com/nthlink-android-current.apk",
         "/Application/VPN/nthLink/MacOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1536318872?mt=12",
         "/Application/VPN/nthLink/iOS(AppStore)": "https://apps.apple.com/us/app/nthlink/id1467297604",
-        "/Application/VPN/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
+        "/Application/PixEZ/0.9.61/PixEZ-Windows": "https://hanze.lanzouw.com/iDhqh2nafw3g",
         "/Application/PixEZ/0.9.61/PixEZ-iOS(ZAKO)": "https://hanze.lanzouw.com/iSUK92naf03e",
         "/Image/Dress/SM.MS/22732/JK-1.png": "https://s2.loli.net/2025/02/12/aFbJZUwuhRAVE9G.png",
         "/Image/Dress/SM.MS/22732/JK-2.png": "https://s2.loli.net/2025/02/12/8zKi5c7rH6ANPEy.png",
