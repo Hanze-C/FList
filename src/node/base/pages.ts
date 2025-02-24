@@ -28,7 +28,6 @@ export function createFilePage(app: App, path: string, file: File): Promise<Page
             content: file.content,
         },
     }
-    console.log(path, 123456)
     return createPage(app, {
         path: path,
         frontmatter: frontmatter
@@ -58,6 +57,16 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             isFolder: true
         }
     })
+
+    // 检查 folder.content 是否为 undefined，如果是则设置为空字符串
+    const content = folder.content || '';
+
+    const cleanedContent = content
+      .replace(/<p[^>]*>.*?<\/p>/gs, '') // 去除 <p> 标签
+      .replace(/<samp[^>]*>(.*?)<\/samp>/gs, '$1'); // 去除 <samp> 标签，保留内容
+
+    // console.log(cleanedContent, 123456)
+
     const frontmatter: FolderPageFrontmatter = {
         layout: 'Folder',
         title: folder.title,
@@ -67,10 +76,10 @@ export function createFolderPage(app: App, path: string, folder: Folder): Promis
             updateTime: folder.updateTime,
             children: childrenData,
             isFolder: true,
-            content: folder.content,
+            content: cleanedContent,
         },
     }
-    console.log(path, 123456)
+
     return createPage(app, {
         path: path,
         frontmatter: frontmatter,

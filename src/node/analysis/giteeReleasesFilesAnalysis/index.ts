@@ -53,7 +53,13 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
                 name: string,
             }[]
         }[];
+
+        let count = 0;
         for(const {tag_name,name,body,created_at,assets} of jsonData){
+            if (count >= 10) {
+	            break;
+	        }
+
             const tagFolder:Folder = {
                 title:name,
                 content:body,
@@ -84,6 +90,8 @@ export function giteeReleasesFilesAnalysis(config: GithubRepository): Analysis {
             }else {
                 abFolders(fileTree,tagFolder);
             }
+            
+            count++;
         }
         return fileTree;
     };

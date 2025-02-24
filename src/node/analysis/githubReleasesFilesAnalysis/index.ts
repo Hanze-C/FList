@@ -44,7 +44,13 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
             content_type: string
         }[]
     }[];
+    
+    let count = 0;
     for (const { tag_name, name, body, published_at, assets } of jsonData) {
+	    if (count >= 10) {
+	        break;
+	    }
+
         const tagFolder: Folder = {
             title: name,
             content: body,
@@ -54,14 +60,17 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
             name: "githubReleasesTagRoot"
         };
         for (const { browser_download_url, size, name, updated_at, content_type } of assets) {
-            joinFile(tagFolder, {
-                downloadUrl: browser_download_url,
-                updateTime: new Date(updated_at).getTime(),
-                size: size,
-                contentType: content_type,
-                name: name,
-                downloadCorsAllow: "loose", 
-            });
+	    const proxiedDownloadUrl = `https://gh-proxy.com/${browser_download_url}`;
+
+	    joinFile(tagFolder, {
+		    downloadUrl: proxiedDownloadUrl,
+		    updateTime: new Date(updated_at).getTime(),
+		    size: size,
+		    contentType: content_type,
+		    name: name,
+		    downloadCorsAllow: "loose", 
+	    });
+
         }
         let tagPath: string = tag_name;
         if (tagPath == "root") {
@@ -77,6 +86,8 @@ async function githubReleasesFileTree(config: GithubRepository): Promise<Folder>
         } else {
             abFolders(fileTree, tagFolder);
         }
+        
+        count++;
     }
     return fileTree;
 }
