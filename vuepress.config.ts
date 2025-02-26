@@ -102,6 +102,16 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Application/Game/Minecraft/JAVA/PojavLauncher/Android",
+      analysis: githubReleasesFilesAnalysis({ user: "PojavLauncherTeam", repository: "PojavLauncher" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
+      mountPath: "/Application/Game/Minecraft/JAVA/PojavLauncher/iOS&iPadOS",
+      analysis: githubReleasesFilesAnalysis({ user: "PojavLauncherTeam", repository: "PojavLauncher_iOS" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
