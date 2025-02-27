@@ -146,6 +146,12 @@ export default defineUserConfig({
         "/Image/Dress/CloudFlare/22746/JK-1.png": "https://paste.hanze.icu/file/gL2pGw",
         "/Image/Dress/CloudFlare/22746/JK-2.png": "https://paste.hanze.icu/file/sTOi7U",
         "/Image/Dress/CloudFlare/22746/JK-3.png": "https://paste.hanze.icu/file/xSWxHH",
+        "/Image/Dress/CloudFlare/22726/万叶-1.png": "https://paste.hanze.icu/file/gL2pGw",
+        "/Image/Dress/CloudFlare/22726/万叶-2.png": "https://paste.hanze.icu/file/sTOi7U",
+        "/Image/Dress/CloudFlare/22726/万叶-3.png": "https://paste.hanze.icu/file/xSWxHH",
+        "/Image/Dress/SM.MS/22726/万叶-1.png": "https://s2.loli.net/2025/02/12/FzarbLw3eZOXUxy.png",
+        "/Image/Dress/SM.MS/22726/万叶-2.png": "https://s2.loli.net/2025/02/12/lfF2cZNG9aTHKBh.png",
+        "/Image/Dress/SM.MS/22726/万叶-3.png": "https://s2.loli.net/2025/02/12/io5cUZfVxJHYLpl.png",
       }),
     },
     // {
