@@ -115,7 +115,8 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/Flist/测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
+        "/Flist/测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
+        "/Image/Dress/SM.MS/22726/万叶.mp4": "https://github.com/Hanze-C/FList/releases/download/File/default.mp4"
       }),
       downProxy: vercelDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
