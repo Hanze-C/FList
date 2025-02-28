@@ -149,9 +149,10 @@ export default defineUserConfig({
         "/Image/Dress/CloudFlare/22726/万叶-1.png": "https://paste.hanze.icu/file/gL2pGw",
         "/Image/Dress/CloudFlare/22726/万叶-2.png": "https://paste.hanze.icu/file/sTOi7U",
         "/Image/Dress/CloudFlare/22726/万叶-3.png": "https://paste.hanze.icu/file/xSWxHH",
-        "/Image/Dress/SM.MS/22726/万叶-1.png": "https://s2.loli.net/2025/02/12/FzarbLw3eZOXUxy.png",
-        "/Image/Dress/SM.MS/22726/万叶-2.png": "https://s2.loli.net/2025/02/12/lfF2cZNG9aTHKBh.png",
-        "/Image/Dress/SM.MS/22726/万叶-3.png": "https://s2.loli.net/2025/02/12/io5cUZfVxJHYLpl.png",
+        "/Image/Dress/SM.MS/22726/万叶-1.png": "https://s2.loli.net/2025/02/28/nr9aCSjGmHNVwyt.jpg",
+        "/Image/Dress/SM.MS/22726/万叶-2.png": "https://s2.loli.net/2025/02/28/UfB9Wzv7V1Guyrs.jpg",
+        "/Image/Dress/SM.MS/22726/万叶-3.png": "https://s2.loli.net/2025/02/28/gwFBYx5QfzPJepR.jpg",
+        "/Image/Dress/SM.MS/22726/万叶-4.png": "https://s2.loli.net/2025/02/28/afR9gMklKh5AXFv.jpg",
       }),
     },
     // {
