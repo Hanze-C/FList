@@ -108,7 +108,7 @@ export default defineUserConfig({
     },
     {
       mountPath: "/Application/Game/Minecraft/JAVA/PojavLauncher/iOS&iPadOS",
-      analysis: githubReleasesFilesAnalysis({ user: "PojavLauncherTeam", repository: "PojavLauncher_iOS" }),
+      analysis: githubReleasesFilesAnalysis({ user: "Hanze-C", repository: "PojavLauncher_iOS" }),
       downProxy: vercelDownProxy(),
     },
     {
