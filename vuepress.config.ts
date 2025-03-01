@@ -112,6 +112,11 @@ export default defineUserConfig({
       downProxy: vercelDownProxy(),
     },
     {
+      mountPath: "/Application/Nugget",
+      analysis: githubReleasesFilesAnalysis({ user: "leminlimez", repository: "Nugget" }),
+      downProxy: vercelDownProxy(),
+    },
+    {
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
