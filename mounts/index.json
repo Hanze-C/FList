@@ -2,7 +2,7 @@
   "analysis": {
     "type": "githubReleasesFilesAnalysis",
     "options": {
-      "user": "jianjianai",
+      "user": "Hanze-C",
       "repository": "FList",
       "authorizationToken": {"$env": "GITHUB_TOKEN"}
     }
