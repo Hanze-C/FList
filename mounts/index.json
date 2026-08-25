@@ -1,6 +1,6 @@
 {
   "analysis": {
-    "type": "githubReposAnalysis",
+    "type": "githubReleasesFilesAnalysis",
     "options": {
       "user": "Hanze-C",
       "repository": "FList",
