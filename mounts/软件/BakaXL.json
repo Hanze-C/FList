@@ -1,0 +1,11 @@
+{
+  "analysis": {
+    "type": "githubReleasesFilesAnalysis",
+    "options": {
+      "user": "BakaXL-Launcher",
+      "repository": "BakaXL",
+      "authorizationToken": {"$env": "GITHUB_TOKEN"},
+      "per_page": 10
+    }
+  }
+}

@@ -2,8 +2,8 @@
   "analysis": {
     "type": "githubReleasesFilesAnalysis",
     "options": {
-      "user": "jianjianai",
-      "repository": "KnapsackToGo4",
+      "user": "Scighost",
+      "repository": "Starward",
       "authorizationToken": {"$env": "GITHUB_TOKEN"},
       "per_page": 10
     }

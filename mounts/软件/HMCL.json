@@ -1,0 +1,11 @@
+{
+  "analysis": {
+    "type": "githubReleasesFilesAnalysis",
+    "options": {
+      "user": "HMCL-dev",
+      "repository": "HMCL",
+      "authorizationToken": {"$env": "GITHUB_TOKEN"},
+      "per_page": 10
+    }
+  }
+}
